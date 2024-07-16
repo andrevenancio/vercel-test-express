@@ -7,10 +7,10 @@ const express_1 = __importDefault(require("express"));
 const app = (0, express_1.default)();
 const port = process.env.PORT || 8080;
 app.get("/", (_req, res) => {
-    return res.send("Express Typescript on Vercel.1");
+    return res.send("Express Typescript on Vercel.2");
 });
 app.get("/ping", (_req, res) => {
-    return res.json({ message: "pong 🏓" });
+    return res.json({ message: "pong 🏓", data: process.env.TEST });
 });
 app.listen(port, () => {
     return console.log(`Server is listening on ${port}`);
