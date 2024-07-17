@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["../src/app.ts"],
+  "sourcesContent": ["const message: string = \"Template esbuild / Typescript\"\n\nconsole.log(message)\n"],
+  "mappings": ";;AAAA,MAAM,UAAkB;AAExB,UAAQ,IAAI,OAAO;",
+  "names": []
+}

@@ -1,1 +1,6 @@
-(()=>{var e="Template esbuild / Typescript";console.log(e);})();
+(() => {
+  // src/app.ts
+  var message = "Template esbuild / Typescript";
+  console.log(message);
+})();
+//# sourceMappingURL=app.js.map
