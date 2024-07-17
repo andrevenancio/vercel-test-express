@@ -1,3 +1,3 @@
 const message: string = "Template esbuild / Typescript"
 
-console.log(message)
+console.log(message, Date.now())
