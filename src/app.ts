@@ -1,4 +1,3 @@
-import { sum } from "./utils/sum"
+const message: string = "Template esbuild / Typescript"
 
-const message: string = "This is the final"
-console.log(message, sum(1, 2), "over")
+console.log(message)
