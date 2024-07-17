@@ -6,7 +6,6 @@
     "dev:serve": "nodemon build/server.js",
     "dev": "rimraf build && concurrently \"npm run dev:watch\" \"npm run dev:serve\"",
     "build": "rimraf build && NODE_ENV=production node esbuild/config.mjs",
-    "add-build": "git add build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
