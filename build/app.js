@@ -1,2 +1,1 @@
-console.log("Hello App");
-//# sourceMappingURL=app.js.map
+(()=>{var o="Hello, ESBUILD";console.log(o);})();

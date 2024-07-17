@@ -1,1 +1,2 @@
-console.log("Hello App")
+const message: string = "Hello, ESBUILD"
+console.log(message)
