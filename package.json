@@ -2,9 +2,10 @@
   "name": "vercel-test-express",
   "version": "1.0.0",
   "scripts": {
-    "olddev": "nodemon src/server.ts",
-    "dev": "node esbuild.config.mjs",
-    "build": "rimraf build && NODE_ENV=production node esbuild.config.mjs",
+    "dev:watch": "node esbuild/config.mjs --watch --incremental",
+    "dev:serve": "nodemon build/server.js",
+    "dev": "rimraf build && concurrently \"npm run dev:watch\" \"npm run dev:serve\"",
+    "build": "rimraf build && NODE_ENV=production node esbuild/config.mjs",
     "add-build": "git add build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,11 +16,11 @@
   "devDependencies": {
     "@types/express": "^4.17.21",
     "@types/node": "^20.14.10",
+    "concurrently": "^8.2.2",
     "esbuild": "^0.23.0",
     "nodemon": "^3.1.4",
     "pre-commit": "^1.2.2",
     "rimraf": "^6.0.1",
-    "ts-node": "^10.9.2",
     "typescript": "^5.5.3"
   },
   "dependencies": {

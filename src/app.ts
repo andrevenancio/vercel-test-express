@@ -1,2 +1,3 @@
+import { sum } from "./utils/sum"
 const message: string = "Hello, ESBUILD"
-console.log(message)
+console.log(message, sum(1, 2))
