@@ -1,1 +1,1 @@
-(()=>{var o=(s,e)=>s+e;var m="Final";console.log(m,o(1,2),"over");})();
+(()=>{var s=(o,e)=>o+e;var m="This is the final";console.log(m,s(1,2),"over");})();
